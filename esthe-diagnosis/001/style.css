@@ -1,0 +1,123 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #c5a47e;
+    margin-bottom: 20px;
+}
+
+.quiz-container, .result-container {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.answers-container button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #c5a47e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.answers-container button:hover {
+    background-color: #b38f6d;
+}
+
+.result-container {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+#result-image {
+    display: none; /* Initially hidden, made visible by script.js */
+    margin: 20px auto 0;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.options-container {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.options-container h3 {
+    color: #c5a47e;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.options-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.option-item {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.option-number {
+    display: inline-block;
+    background-color: #c5a47e;
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.option-number-special {
+    background-color: #ff8fab;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transform: rotate(-15deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.option-item:hover .option-number-special {
+    transform: rotate(0deg) scale(1.1);
+}
